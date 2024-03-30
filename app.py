@@ -5,7 +5,7 @@ import time
 def main():
     st.set_page_config(
         page_title="Denizen Cloud",
-        page_icon="logo.ico",
+        page_icon="Utilities/logo.ico",
         layout="wide",
     )
 
@@ -20,7 +20,7 @@ def main():
         display_connected_appliances_page()
 
 def display_home_page():
-    st.image("welcome-page logo.png", width = 200);
+    st.image("Utilities/welcome-page logo.png", width = 200);
     st.write()
     st.title("Welcome to Denizen Cloud")
     # Add more content specific to the Home page if needed
@@ -28,7 +28,7 @@ def display_home_page():
 def display_recent_orders_page():
     st.title("Recent Orders")
     st.write()
-    table = pd.read_csv("Recent Orders.csv")
+    table = pd.read_csv("Utilities/Recent Orders.csv")
     st.table(data = table)
     # Add more content specific to the Recent Orders page if needed
 
@@ -48,7 +48,7 @@ def display_hp_page():
     st.write()
     st.title("Printer Statistics")
     st.write()
-    st.image("ink-levels.png")
+    st.image("Utilities/ink-levels.png")
     st.warning('Black Ink depleting fast!!!',icon="⚠️")
 
     time.sleep(1)
@@ -63,7 +63,7 @@ def display_lg_page():
     st.write()
     st.title("Refrigerator Statistics")
     st.write()
-    st.image("temp-gauge.png")
+    st.image("Utilities/temp-gauge.png")
     st.write()
     st.error("Temperature Value too high!!!", icon="⚠️")
 
