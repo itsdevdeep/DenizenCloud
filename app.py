@@ -54,8 +54,8 @@ def display_hp_page():
     time.sleep(1)
     st.toast("Order for Black Ink placed on Amazon!")
     
-    st.subheader("Complete Your Order now")
-    st.write("[Your Cart]()");
+    st.subheader("Review your Order now")
+    st.write("[HP GT53XL 135-ml Black Original Ink Bottle](https://www.amazon.in/gp/your-account/order-history?ref_=typ_rev_edit_mult)");
 
     # Add more content specific to HP Smart Tank 510 if needed
 
